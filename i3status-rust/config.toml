@@ -1,0 +1,32 @@
+icons_format = "{icon}"
+
+[theme]
+theme = "solarized-dark"
+[theme.overrides]
+idle_bg = "#123456"
+idle_fg = "#ffa500"
+
+[icons]
+icons = "awesome"
+
+[[block]]
+block = "cpu"
+[[block]]
+block="battery"
+
+[[block]]
+block = "memory"
+format = " $icon $mem_total_used_percents.eng(2) "
+format_alt = " $icon_swap $swap_used_percents.eng(2) "
+
+[[block]]
+block = "sound"
+[[block.click]]
+button = "left"
+cmd = "pavucontrol"
+
+[[block]]
+block = "time"
+interval = 5
+format = " %a %m/%d %R "
+
