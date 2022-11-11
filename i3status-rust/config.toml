@@ -13,6 +13,12 @@ icons = "awesome"
 block = "cpu"
 
 [[block]]
+block = "battery"
+[block.theme_overrides]
+idle_bg = "#000000"
+idle_fg = "#ffffff"
+
+[[block]]
 block = "memory"
 format = " $icon $mem_total_used_percents.eng(2) "
 
